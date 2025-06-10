@@ -1,0 +1,22 @@
+[project]
+name = "explore-uv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "atiasultani", email = "160133182+atiasultani@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "agents>=1.4.0",
+    "crewai>=0.121.0",
+    "openai>=1.75.0",
+    "openai-agents[litellm]>=0.0.12",
+]
+
+[project.scripts]
+explore-uv = "explore_uv:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
